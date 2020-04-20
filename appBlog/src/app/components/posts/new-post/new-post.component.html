@@ -1,5 +1,5 @@
 <div class="new-post-container">
-  <form>
+  <form [formGroup] = "newPostForm" (ngSubmit) = "addNewPost(newPostForm)">
     <mat-form-field>
       <mat-label> Title </mat-label>
       <input matInput placeholder="Title Post" />

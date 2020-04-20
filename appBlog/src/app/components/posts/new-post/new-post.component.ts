@@ -22,4 +22,9 @@ export class NewPostComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  addNewPost(data: PostInt)
+  {
+    console.log('new post', data);
+  }
+
 }
