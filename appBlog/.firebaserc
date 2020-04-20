@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "blogapp-6ede4": {
+      "hosting": {
+        "appBlog": [
+          "blogapp-6ede4"
+        ]
+      }
+    }
+  }
+}
