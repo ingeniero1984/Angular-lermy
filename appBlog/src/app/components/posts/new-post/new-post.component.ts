@@ -9,7 +9,7 @@ import { PostsService } from '../posts.service';
   styleUrls: ['./new-post.component.css']
 })
 export class NewPostComponent implements OnInit {
-
+  private image: any;
   constructor(private postSvc: PostsService) { }
 
   public newPostForm = new FormGroup({
@@ -22,9 +22,13 @@ export class NewPostComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  addNewPost(data: PostInt)
-  {
-    console.log('new post', data);
+  addNewPost(data: PostInt) {
+    console.log('New post', data);
+    this.postSvc.preAddAndUpdatePost(data, this.image);
+  }
+
+  handleImage(event: any): void {
+    this.image = event.target.files[0];
   }
 
 }
