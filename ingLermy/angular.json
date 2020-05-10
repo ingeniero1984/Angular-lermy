@@ -24,9 +24,16 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "src/styles.css",
+              "node_modules/materialize-css/dist/css/materialize.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_module/jquery/dist/jquery.js",
+              "node_module/hammerjs/hammer.js",
+              "node_module/materialize-css/dist/js/materialize.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -88,6 +95,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.css"
             ],
             "scripts": []
