@@ -1,17 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-toolbar',
   templateUrl: './toolbar.component.html',
   styleUrls: ['./toolbar.component.css']
 })
-export class ToolbarComponent implements OnInit {
+export class ToolbarComponent {
 
-  public appName = 'Lermy Ferrer';
+  public appName = 'Lermy Ferrer Peralta';
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  @Input() deviceXs: boolean;
 
 }

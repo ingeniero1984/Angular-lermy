@@ -1,37 +1,11 @@
-<mat-toolbar color='primary'>
+<mat-toolbar color="primary" class="mat-elevation-z8">
+  <span><mat-icon>home</mat-icon>{{ appName }}</span>
 
-  <a routerLink="/home">{{ appName }}</a>
+   <div class="spacer"></div>
 
-  <span class="fill-remaining-space"></span>
-
-  <a routerLink="/home">
-    <button mat-flat-button color="primary">
-      Inicio
-    </button>
-  </a>
-
-  <a routerLink="/tecnology">
-    <button mat-flat-button color="primary">
-      Tecnologias
-    </button>
-  </a>
-
-  <a routerLink="/proyects">
-    <button mat-flat-button color="primary">
-      Proyectos
-    </button>
-  </a>
-
-  <a routerLink="/others">
-    <button mat-flat-button color="primary">
-      otros Servicios
-    </button>
-  </a>
-
-  <a routerLink="/contact">
-    <button mat-flat-button color="primary">
-      Contacto
-    </button>
-  </a>
-
-</mat-toolbar>
+  <a mat-button routerLink="home">Inicio</a>
+  <a mat-button routerLink="tecnology">Tecnologias</a>
+  <a mat-button routerLink="proyects">Proyectos</a>
+  <a mat-button routerLink="others">Otros servicios</a>
+  <a mat-button routerLink="about">Contacto</a>
+ </mat-toolbar>
